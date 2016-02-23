@@ -1,0 +1,81 @@
+html {
+	font-family: sans-serif;
+}
+body {
+	margin: 0;
+}
+
+/* HEADER */
+header {
+	width: 100%;
+	background-color: #fff;
+	color: #000;
+	margin: 0;
+	border: 1px solid red;
+	height: 100px;
+}
+@media (max-width: 319px) {
+	header {
+		height: 70px;
+	}
+}
+
+.menu {
+}
+.menu-item {
+	list-style: none;
+	display: inline-block;
+	margin: auto 
+}
+/* MAIN */
+.producto, .compra, .detalles {
+	margin: 0;
+	padding: 0;
+	border: 1px solid red;
+}
+.producto {
+	width: 600px;
+}
+.compra {
+	clear: left;
+}
+
+@media (max-width: 767px) {
+	.producto {
+	width: 307px;
+	}
+}
+@media (max-width: 319px) {
+	.producto {
+	width: 100%;
+	}
+}
+.img-portada {
+	width: inherit;
+}
+.rrss {
+	float: right;
+}
+/* FOOTER */
+footer {
+	margin: 0;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	border: 1px solid red;
+	text-align: center;
+	height: 144px;
+}
+
+/* COSAS GENERALES DE DISEÑO */
+.cl:after {
+	clear: both;
+}
+.hidden-xs {
+	display: inline-block;
+
+}
+@media (max-width: 767px) {
+	.hidden-xs {
+	display: none;
+}
