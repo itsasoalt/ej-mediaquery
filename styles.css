@@ -10,16 +10,18 @@ header {
 	width: 100%;
 	background-color: #fff;
 	color: #000;
-	margin: 0;
-	border: 1px solid red;
-	height: 100px;
+	padding-top: 24px;
+	height: 70px;
 }
-@media (max-width: 319px) {
+header img.logo {
+	display: block;
+	margin: 0 auto;
+}
+@media (min-width: 319px) {
 	header {
-		height: 70px;
+		height: 100px;
 	}
 }
-
 .menu {
 }
 .menu-item {
@@ -27,55 +29,171 @@ header {
 	display: inline-block;
 	margin: auto 
 }
+.ham-menu {
+	float: right;
+}
+.ham-menu.uno, .ham-menu.dos, .ham-menu.tres {
+	background: black;
+	width: 30px;
+	height: 4px;
+}
+.ham-menu.uno {
+
+}
+.ham-menu.dos {
+
+}
+.ham-menu.tres {
+
+}
 /* MAIN */
 .producto, .compra, .detalles {
 	margin: 0;
-	padding: 0;
-	border: 1px solid red;
+	padding: 0 0 24px;
+	border-bottom: 1px solid #e2e2e2;
 }
+.compra, .detalles {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* PORDUCTO */
 .producto {
-	width: 600px;
-}
-.compra {
-	clear: left;
-}
-
-@media (max-width: 767px) {
-	.producto {
-	width: 307px;
-	}
-}
-@media (max-width: 319px) {
-	.producto {
 	width: 100%;
-	}
+	padding-bottom: 48px;
 }
 .img-portada {
 	width: inherit;
 }
 .rrss {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 24px;
+}
+.rrss>a, .rrss>a:hover {
+	color: transparent;
+}
+@media (min-width: 319px) {
+	.producto {
+		max-width: 320px;
+		padding-bottom: 48px;
+		display: inline-block;
+	}
+}
+/* COMPRA */
+.compra {
 	float: right;
+}
+.nombre:before {
+	content: "Nombre";
+	font-size: 10px;
+	font-weight: 400;
+	float: left;
+	line-height: 0;
+	text-transform: capitalize;
+}
+.nombre {
+	display: inline-block;
+	line-height: 46px;
+	text-transform: uppercase;
+	margin: 24px auto;
+}
+.precio {
+	float: right;
+	display: inline-block;
+	margin: 24px auto;
+}
+.precio:after {
+	content: "€";
+	font-size: 12px;
+	font-weight: 400;
+	float: right;
+	line-height: 1;
+}
+.btn-talla {
+	border: 1px solid #F16464;
+	width: 48px;
+	height: 48px;
+	color: #000;
+	background: #fff;
+	float: left;
+	font-size: 16px;
+	margin: 24px auto 48px;
+	margin-left: -1px;
+}
+.btn-talla.active {
+	background: #E9A6A6;
+	color: #fff;
+}
+.btn-talla.disabled {
+	color: #B2B2B1;
+}
+.link-guia, .link-guia:hover {
+	float: right;
+	color: #000;
+	line-height: 48px;
+	margin: 24px auto 48px;
+}
+.add {
+	clear: left;
+	display: block;
+	text-transform: uppercase;
+	color: #fff;
+	background: #F16464;
+	border: none;
+	width: 100%;
+	font-size: 16px;
+	height: 48px;
+	margin: 48px auto 24px;
+}
+@media (min-width: 319px) {
+	.compra {
+		display: inline-block;
+	}
+}
+/* DESCRIPCION */
+.box {
+	border: 1px solid #000;
+}
+.box>h3 {
+	color: #fff;
+	background: #000;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0 15px;
+	line-height: 24px;
+	font-size: 14px;
+	font-weight: 400;
+}
+.box>p {
+	padding: 0 15px;
 }
 /* FOOTER */
 footer {
 	margin: 0;
+	padding-top: 24px;
 	width: 100%;
 	background-color: #000;
 	color: #fff;
-	border: 1px solid red;
 	text-align: center;
 	height: 144px;
 }
 
 /* COSAS GENERALES DE DISEÑO */
 .cl:after {
+	display: block;
 	clear: both;
 }
 .hidden-xs {
 	display: inline-block;
-
+}
+.visible-xs {
+	display: none;
 }
 @media (max-width: 767px) {
 	.hidden-xs {
-	display: none;
+		display: none;
+	}
+	.visible-xs {
+		display: inline-block;
+	}
 }

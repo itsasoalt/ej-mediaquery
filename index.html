@@ -8,7 +8,7 @@
 
 <body>
 	<header>
-		<img src="img/logo.png" alt="logo">
+		<img class="logo" src="img/logo.png" alt="logo">
 		<nav class="hidden-xs menu">
 			<ul>
 				<li class="menu-item">Nosotros</li>
@@ -16,6 +16,11 @@
 				<li class="menu-item">Contacto</li>
 			</ul>
 		</nav>
+		<div class="ham-menu visible-xs">
+			<span class="uno"></span>
+			<span class="dos"></span>
+			<span class="tres"></span>
+		</div>
 	</header>
 
 	<main>
@@ -34,17 +39,17 @@
 				</a>
 			</div>
 		</div>
-		<div class="compra top-border">
-			<h1>Producto</h1>
-			<h2>00€</h2>
+		<div class="compra top-border cl">
+			<h1 class="nombre">Producto</h1>
+			<h2 class="precio">00</h2>
 
-			<div>
-				<button class="active">S</button>
-				<button class="">M</button>
-				<button class="disabled">L</button>
+			<div class="">
+				<button class=" btn-talla active">S</button>
+				<button class="btn-talla">M</button>
+				<button class="btn-talla disabled">L</button>
 			</div>
 			
-			<a href="#">Guía de tallas</a>
+			<a class="link-guia" href="#">Guía de tallas</a>
 			<button class="add">Añadir a la cesta</button>
 			
 		</div>
